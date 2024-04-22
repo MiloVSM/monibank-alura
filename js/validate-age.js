@@ -1,9 +1,9 @@
 // Valida se o usuário é maior de idade
 const verifyAge = (field) => {
     const birthDate = new Date(field.value);
-    isAdult(birthDate);
-
-    console.log(isAdult(birthDate))
+    if (!isAdult(birthDate)) {
+        field.setCustomValidity(True);
+    }
 }
 
 const isAdult = (date) => {

@@ -16,9 +16,7 @@ const cpfIsValid = (field) => {
     const cpf = field.value.replace(/\.|-/g, "");
 
     if (checkNumberRepetition(cpf) || checkFirstDigit(cpf) || checkSecondDigit(cpf)) {
-        console.log("Este CPF não existe!");
-    } else {
-        console.log("Existe!")
+        field.setCustomValidity('CPF invalido');
     }
 }
 
