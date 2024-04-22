@@ -1,6 +1,6 @@
 import { cpfFormat } from "./validate-cpf.js";
 import { cpfIsValid } from "./validate-cpf.js"
-import { verifyAge } from "./validate-idade.js";
+import { verifyAge } from "./validate-age.js";
 
 //Guarda os campos obrigatórios do formulário em uma variável
 const formFields = document.querySelectorAll("[required]"); 
